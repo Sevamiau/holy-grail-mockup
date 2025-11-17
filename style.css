@@ -12,7 +12,11 @@
 
 .header {
     padding: 20px;
- 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
 }
 
 .header-container {
@@ -21,12 +25,18 @@
     grid-template-columns: 2fr 1fr;
     grid-column: 2/3;
     gap: 3em;
-    
+}
+
+.header-buttons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
 }
 
 .header-bottom-right {
     display: flex;
     gap: 10px;
+    align-items: center;
 }
 
 .header-bottom-left {
@@ -37,6 +47,7 @@
 .header-top-right {
     display: flex;
     justify-content: end;
+    align-items: center;
 }
 
 #button-search-bar {
@@ -47,6 +58,7 @@
     background-color: hsl(208, 42%, 65%);
     font-weight: 900;
     font-size: 1em;
+    margin-right: 20px;
 }
 
 input {
@@ -55,6 +67,7 @@ input {
     padding: 10px;
     width: 40em;
     border-radius: 20px;
+    font-weight: 900;
 }
 
 #btn1,
@@ -70,6 +83,7 @@ input {
     width: 100px;
 }
 
+.hat:hover,
 #button-search-bar:hover,
 #btn1:hover,
 #btn2:hover,
@@ -94,6 +108,12 @@ input {
 .sidebar-logo {
     font-size: 50px;
     padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.sidebar-buttons{
+    cursor: pointer;
 }
 
 .sidebar-items {
@@ -111,4 +131,199 @@ li {
 
 .main-content {
     background-color: rgb(182, 157, 206);
+}
+
+.hat {
+    height: 40px;
+    border: none;
+    background-color: rgb(159, 221, 221);
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+
+}
+
+.suitcase {
+    height: 40px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    gap: 10px;
+    padding-right: 5px;
+
+}
+
+.parasol {
+    height: 70px;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.pug {
+    border-radius: 100px;
+    height: 50px;
+    border-radius: 100px;
+    border: none;
+    background-color: white;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    cursor: pointer;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #e2e8f0;
+}
+
+.main-content h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.projects,
+.announcements,
+.trending {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    gap: 0.6rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 100%;
+    background-color: rgb(160, 224, 160);
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.project-card h4 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.project-card p {
+    color: rgb(245, 183, 193);
+    line-height: 1.4;
+    font-size: 1.5rem;
+}
+
+.project-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.project-buttons button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.main-sidebar {
+    display: grid;
+    gap: 2rem;
+}
+
+.announcements-grid {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(5, auto);
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.announcements h4 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+
+.announcements p {
+    color: rgb(223, 144, 157);
+    font-size: 0.9rem;
+}
+
+.separator {
+    height: 2px;
+    background-color:  rgb(223, 144, 157);
+;
+    opacity: 0.25;
+    width: 100%;
+}
+
+.trending-grid {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.trending-item {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.trending-item img {
+    width: 50px;
+    height: 50px;
+}
+
+.trending-item h5 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.trending-item p {
+    color: rgb(223, 144, 157);
+    font-size: 0.9rem;
 }

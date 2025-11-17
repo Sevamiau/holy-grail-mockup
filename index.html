@@ -11,16 +11,26 @@
         <div class="header">
             <div class="header-container">
                 <div class="header-top-left">
-                    <form action="/search" method="get">
-                        <button type="submit" id="button-search-bar">search</button>
-                        <input type="search" name="q" placeholder="      *search for something*">
-                    </form>
+                    <div class="header-form">
+                        <form action="/search" method="get">
+                            <button type="submit" id="button-search-bar">search</button>
+                            <input type="search" name="q" placeholder="      *search for something*">
+                        </form>
+                    </div>    
                 </div>
                 <div class="header-top-right">
-                    <h1>top right</h1>
+                    <button class="suitcase">
+                        <img class="suitcase" src="images/suitcase-svgrepo-com.svg" alt="">
+                    </button>
+                    <img class="pug" src="images/pug.jpg" alt="">
+                    <h2>perro loco</h2>
                 </div>
                 <div class="header-bottom-right">
-                    <h1>Perro Loco</h1>
+                    <img class="parasol " src="images/pug.jpg" alt="">
+                    <div class="header-bottom-right-h1">
+                        <h3>hi, there!</h3>
+                        <h1>Perro Loco</h1>
+                    </div>    
                 </div>
                 <div class="header-bottom-left">
                     <div class="header-buttons">    
@@ -33,27 +43,189 @@
         </div>
         <div class="sidebar">
             <div class="sidebar-items">
-                <div class="sidebar-logo">logo</div>    
+                <div class="sidebar-logo">
+                    <img class="parasol" src="images/parasol-svgrepo-com.svg" alt="">
+                    <h3>logo</h3>
+                </div>    
                     <div class="sidebar-buttons">
                         <br>
                         <ul class="upper-items">
-                            <li>Home</li>
-                            <li>Profile</li>
-                            <li>Messages</li>
-                            <li>History</li>
-                            <li>Tasks</li>
-                            <li>Comunities</li>
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    <p>Home</p>
+                                </button>
+                            </li>        
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Profile
+                                </button>
+                            </li> 
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Messages
+                                </button>
+                            </li>
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    History
+                                </button>
+                            </li>
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Tasks
+                                </button>
+                            </li>
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Communities
+                                </button>
+                            </li>                                                                                                                                                     
                         </ul>
                         <br>
                         <ul class="lower-items">
-                            <li>Settings</li>
-                            <li>Support</li>
-                            <li>Privacy</li>
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Settings
+                                </button>
+                            </li>  
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Support
+                                </button>
+                            </li>  
+                            <li>  
+                                <button class="hat">
+                                    <img class="hat" src="images/hat-svgrepo-com.svg" alt="">
+                                    Privacy
+                                </button>
+                            </li>  
                         </ul>
                     </div>
             </div>
         </div>
-        <div class="main-content"></div>
+        <div class="main-content">
+            <div class="projects">
+                <h3>Your Projects</h3>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h4>Super Cool Project</h4>
+                        <p>Sed tempus ut lacus ut scelerisque. Suspendisse sollicitudin nibh erat, id facilisis felis accumsan nec.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Less Cool Project</h4>
+                        <p>Nullam condimentum ipsum ut lectus vehicula consectetur. Quisque sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis sem purus, dignissim ut sapien in, varius pellentesque lacus.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Impossible App</h4>
+                        <p>In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a placerat velit sagittis id.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Easy Peasy App</h4>
+                        <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo, ac bibendum magna tincidunt.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Ad Blocker</h4>
+                        <p>Quisque eget rutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra hendrerit felis. Aliquam sed malesuada eros.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h4>Money Maker</h4>
+                        <p>Praesent convallis, libero quis congue elementum, nunc ante faucibus sapien, ac scelerisque tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                        <div class="project-buttons">
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-sidebar">
+                <div class="announcements">
+                    <h3>Announcements</h3>
+                    <div class="announcements-grid">
+                        <div class="announcement-item">
+                            <h4>Site Maintenance</h4>
+                            <p>Vestibulum condimentum tellus lacus, in accumsan elit maximus ac. Donec hendrerit sodales congue...</p>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="announcement-item">
+                            <h4>Community Share Day</h4>
+                            <p>Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. Aliquam dictum accumsan porttitor...</p>
+                        </div>
+                        <div class="separator"></div>
+                        <div class="announcement-item">
+                            <h4>Updated Privacy Policy</h4>
+                            <p>Phasellus efficitur nisi eget elit consectetur, eget condimentum ante auctor. Cras fringilla sagittis sem in mattis...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h3>Trending</h3>
+                    <div class="trending-grid">
+                        <div class="trending-item">
+                            <img src="images/pug.jpg" alt="">
+                            <div>
+                                <h5>@El Pugo Loco</h5>
+                                <p>Threats, threats, threats</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="images/pug.jpg" alt="">
+                            <div>
+                                <h5>@morcillo</h5>
+                                <p>Super Cool Dog</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="images/pug.jpg" alt="">
+                            <div>
+                                <h5>@kendall Perrer</h5>
+                                <p>fodo or die</p>
+                            </div>
+                        </div>
+                        <div class="trending-item">
+                            <img src="images/pug.jpg" alt="">
+                            <div>
+                                <h5>@Perros Locos</h5>
+                                <p>Quesitos o bala</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>    
 </body>
 </html>
